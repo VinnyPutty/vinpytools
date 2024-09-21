@@ -1,7 +1,9 @@
-from typing import Iterable, Sized, Iterator, Tuple, Reversible
+from typing import Iterable, Iterator, Reversible, Sized, Tuple
 
 
-def reverse_enumerate(collection: [Iterable, Sized, Reversible], start_index: int = None) -> Iterator[Tuple]:
+def reverse_enumerate(
+    collection: [Iterable, Sized, Reversible], start_index: int = None
+) -> Iterator[Tuple]:
     """
     Iterator form of reverse_enumerate.
     :param collection:
