@@ -1,0 +1,11 @@
+load("@deps//:requirements.bzl", "requirement")
+load("@rules_python//python:defs.bzl", "py_binary")
+
+py_binary(
+    name = "hello_world",
+    srcs = ["hello_world.py"],
+    deps = [
+        "//vinpytools:generator",
+        requirement("numpy"),
+    ],
+)
